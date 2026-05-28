@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply transition-colors duration-300;
+  }
+}
+
+/* Theme Classes controlled by Redux */
+.dark-theme {
+  @apply bg-bg-dark text-white;
+}
+
+.light-theme {
+  @apply bg-bg-light text-gray-900;
+}
+
+/* Base focus styles for accessibility */
+*:focus-visible {
+  @apply outline-none ring-2 ring-brand-orange ring-offset-2 ring-offset-bg-dark;
+}
